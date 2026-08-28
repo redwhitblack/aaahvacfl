@@ -46,7 +46,7 @@ export const services = [
     title: "AC repair",
     lead: "Warm rooms, a noisy unit, a breaker that will not stay on — we find the problem and fix it.",
     body: "We work on the system you already have: split systems, package units, heat pumps, and mini-splits. You get a straight answer before any parts come off.",
-    image: "/media/repair-estate.jpg",
+    image: "/media/repair-service.jpg",
     alt: "Service gauges on a condenser at a Southwest Florida home",
   },
   {
