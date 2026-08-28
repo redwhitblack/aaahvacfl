@@ -2,14 +2,15 @@
 
 :root {
   --ink: #121c18;
-  --ink-soft: #3a4a43;
+  --ink-soft: #2c3a34;
   --paper: #f4efe6;
   --paper-2: #ebe4d6;
   --gulf: #0d3b38;
   --gulf-deep: #082624;
-  --water: #1b6b66;
+  --water: #14544f;
   --brass: #c4a574;
   --brass-2: #a88858;
+  --brass-light: #edd9b0;
   --line: rgba(18, 28, 24, 0.12);
 }
 
@@ -23,6 +24,7 @@
   --color-water: var(--water);
   --color-brass: var(--brass);
   --color-brass-2: var(--brass-2);
+  --color-brass-light: var(--brass-light);
   --color-line: var(--line);
   --font-sans: var(--font-outfit);
   --font-serif: var(--font-newsreader);
@@ -52,7 +54,7 @@ a {
 }
 
 :focus-visible {
-  outline: 2px solid var(--brass);
+  outline: 2px solid var(--gulf);
   outline-offset: 3px;
 }
 

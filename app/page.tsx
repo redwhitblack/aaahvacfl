@@ -13,15 +13,15 @@ export default function Home() {
           priority
           className="object-cover object-[45%_center]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gulf-deep via-gulf-deep/40 to-gulf-deep/15" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(8,38,36,0.72)_0%,rgba(8,38,36,0.22)_32%,rgba(8,38,36,0.28)_58%,rgba(8,38,36,0.88)_100%)]" />
         <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-16 pt-32 text-paper md:px-8 md:pb-24">
-          <p className="text-[11px] tracking-[0.32em] uppercase text-brass">
+          <p className="text-[11px] tracking-[0.32em] uppercase text-brass-light">
             Naples · Fort Myers · Since {site.founded}
           </p>
-          <h1 className="serif mt-5 max-w-3xl text-5xl leading-[0.95] md:text-7xl">
+          <h1 className="serif mt-5 max-w-3xl text-5xl leading-[0.95] drop-shadow-[0_2px_18px_rgba(8,38,36,0.45)] md:text-7xl">
             Heating, air, and refrigeration since {site.founded}.
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-paper/80 md:text-lg">
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-paper md:text-lg">
             {site.legalName}. {site.owner}, owner and operator. Homes,
             companies, and industrial sites from Naples to Fort Myers.
           </p>
@@ -79,7 +79,7 @@ export default function Home() {
             <h2 className="serif text-4xl md:text-5xl">Services</h2>
             <Link
               href="/services"
-              className="text-xs tracking-[0.18em] uppercase text-water transition-opacity hover:opacity-70"
+              className="text-xs tracking-[0.18em] uppercase text-gulf transition-opacity hover:opacity-70"
             >
               All services
             </Link>
@@ -117,14 +117,14 @@ export default function Home() {
             className="object-cover object-[70%_center]"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-gulf-deep/85 via-gulf-deep/45 to-gulf-deep/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-gulf-deep/90 via-gulf-deep/55 to-gulf-deep/15" />
           <div className="relative mx-auto flex min-h-[70svh] max-w-6xl items-end px-5 py-16 text-paper md:items-center md:px-8 md:py-24">
             <div className="max-w-xl">
-              <p className="serif text-3xl leading-[1.15] md:text-5xl">
+              <p className="serif text-3xl leading-[1.15] drop-shadow-[0_2px_16px_rgba(8,38,36,0.4)] md:text-5xl">
                 Air conditioners here run most of the year. A checkup before
                 the heat hits is cheaper than a Sunday breakdown.
               </p>
-              <p className="mt-8 text-xs tracking-[0.22em] uppercase text-brass">
+              <p className="mt-8 text-xs tracking-[0.22em] uppercase text-brass-light">
                 Naples · Fort Myers · Southwest Florida
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function Home() {
         </div>
         <Link
           href="/mike"
-          className="mt-10 inline-block text-xs tracking-[0.18em] uppercase text-water transition-opacity hover:opacity-70"
+          className="mt-10 inline-block text-xs tracking-[0.18em] uppercase text-gulf transition-opacity hover:opacity-70"
         >
           More about Mike
         </Link>

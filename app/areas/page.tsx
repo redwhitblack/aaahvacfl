@@ -19,9 +19,9 @@ export default function AreasPage() {
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gulf-deep/70 via-gulf-deep/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-gulf-deep/85 via-gulf-deep/40 to-gulf-deep/20" />
         <div className="relative mx-auto flex h-full max-w-6xl items-end px-5 pb-10 text-paper md:px-8">
-          <h1 className="serif text-5xl md:text-6xl">
+          <h1 className="serif text-5xl drop-shadow-[0_2px_16px_rgba(8,38,36,0.45)] md:text-6xl">
             Naples, Fort Myers, and nearby
           </h1>
         </div>

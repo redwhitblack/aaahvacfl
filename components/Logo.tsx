@@ -32,7 +32,7 @@ export function Logo({
       <span className="leading-none">
         <span
           className="block text-[11px] tracking-[0.28em] uppercase"
-          style={{ color: light ? "rgba(244,239,230,0.72)" : "#3A4A43" }}
+          style={{ color: light ? "#F4EFE6" : "#2C3A34" }}
         >
           Mike Palon
         </span>

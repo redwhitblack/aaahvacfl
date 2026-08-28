@@ -8,14 +8,14 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-3 md:px-8">
         <div>
           <Logo light />
-          <p className="mt-5 max-w-xs text-sm leading-relaxed text-paper/70">
+          <p className="mt-5 max-w-xs text-sm leading-relaxed text-paper/90">
             {site.legalName}. {site.owner}, owner and operator. Homes,
             companies, and industrial work in Southwest Florida since{" "}
             {site.founded}.
           </p>
         </div>
-        <div className="text-sm leading-7 text-paper/80">
-          <p className="text-[11px] tracking-[0.22em] uppercase text-brass">
+        <div className="text-sm leading-7 text-paper/90">
+          <p className="text-[11px] tracking-[0.22em] uppercase text-brass-light">
             Service area
           </p>
           <p className="mt-3">
@@ -25,10 +25,10 @@ export function Footer() {
           </p>
         </div>
         <div className="text-sm leading-7">
-          <p className="text-[11px] tracking-[0.22em] uppercase text-brass">
+          <p className="text-[11px] tracking-[0.22em] uppercase text-brass-light">
             Site
           </p>
-          <div className="mt-3 flex flex-col gap-1 text-paper/80">
+          <div className="mt-3 flex flex-col gap-1 text-paper">
             <Link href="/services">Services</Link>
             <Link href="/mike">Mike Palon</Link>
             <Link href="/areas">Service area</Link>
@@ -37,7 +37,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-white/10 px-5 py-6 text-xs text-paper/45 md:px-8">
+      <div className="border-t border-white/10 px-5 py-6 text-xs text-paper/75 md:px-8">
         <p className="mx-auto max-w-6xl">
           © {new Date().getFullYear()} {site.legalName}
         </p>

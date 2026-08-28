@@ -83,7 +83,7 @@ export function LeadForm() {
           name="area"
           autoComplete="address-level2"
           placeholder="Naples, Fort Myers, Estero"
-          className="border border-line bg-paper px-3 py-3 text-base tracking-normal text-ink outline-none focus:border-gulf"
+          className="border border-line bg-paper px-3 py-3 text-base tracking-normal text-ink outline-none placeholder:text-ink-soft/80 focus:border-gulf"
         />
       </label>
       <label className="grid gap-1 text-xs tracking-[0.14em] uppercase text-ink-soft">

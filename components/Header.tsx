@@ -33,7 +33,7 @@ export function Header() {
     <header
       className={`fixed top-0 z-40 w-full transition-colors ${
         light
-          ? "text-paper"
+          ? "bg-gradient-to-b from-gulf-deep/80 to-transparent text-paper"
           : "bg-paper/95 text-ink shadow-[0_1px_0_var(--line)] backdrop-blur"
       }`}
     >
@@ -47,7 +47,7 @@ export function Header() {
             <Link
               key={l.href}
               href={l.href}
-              className={`opacity-80 transition hover:opacity-100 ${path === l.href ? "opacity-100" : ""}`}
+              className={`opacity-90 transition hover:opacity-100 ${path === l.href ? "opacity-100" : ""}`}
             >
               {l.label}
             </Link>
