@@ -62,8 +62,8 @@ export const services = [
     title: "Refrigeration",
     lead: "Walk-in coolers, reach-ins, and ice machines for restaurants and businesses.",
     body: "If the cooler is down, product is at risk. We service commercial refrigeration as well as home air.",
-    image: "/media/cooler-walkin.jpg",
-    alt: "Open commercial walk-in cooler with food on stainless racks",
+    image: "/media/cooler-premium.jpg",
+    alt: "Clean commercial walk-in cooler with organized produce",
   },
   {
     slug: "maintenance",
