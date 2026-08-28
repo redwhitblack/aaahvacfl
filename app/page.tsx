@@ -36,7 +36,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-2 md:px-8 md:py-28">
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 md:grid-cols-2 md:px-8 md:py-28">
+        <div className="relative aspect-square overflow-hidden bg-paper-2">
+          <Image
+            src="/media/mike-palon.jpg"
+            alt="Mike Palon, owner of AAA HVAC"
+            fill
+            className="object-cover object-top"
+            sizes="(min-width: 768px) 50vw, 100vw"
+          />
+        </div>
         <div>
           <p className="text-[11px] tracking-[0.28em] uppercase text-water">
             Since {site.founded}
@@ -44,21 +53,21 @@ export default function Home() {
           <h2 className="serif mt-4 text-4xl leading-tight md:text-5xl">
             Mike Palon owns the company. He does the work.
           </h2>
-        </div>
-        <div className="space-y-5 text-[1.05rem] leading-relaxed text-ink-soft">
-          <p>
-            This shop has been his since {site.founded}. You talk to Mike — the
-            person who will be at the house.
-          </p>
-          <p>
-            We repair, replace, and maintain air conditioning, heating, and
-            refrigeration. If a part will fix it, that is what we do. If the
-            unit is worn out, we will say so and give you a price.
-          </p>
-          <p>
-            We also work on restaurant equipment: walk-ins, reach-ins, and ice
-            machines.
-          </p>
+          <div className="mt-8 space-y-5 text-[1.05rem] leading-relaxed text-ink-soft">
+            <p>
+              This shop has been his since {site.founded}. You talk to Mike —
+              the person who will be at the house.
+            </p>
+            <p>
+              We repair, replace, and maintain air conditioning, heating, and
+              refrigeration. If a part will fix it, that is what we do. If the
+              unit is worn out, we will say so and give you a price.
+            </p>
+            <p>
+              We also work on restaurant equipment: walk-ins, reach-ins, and
+              ice machines.
+            </p>
+          </div>
         </div>
       </section>
 

@@ -22,14 +22,15 @@ export default function MikePage() {
         </p>
       </header>
 
-      <div className="mx-auto mt-16 grid max-w-6xl gap-12 px-5 pb-24 md:grid-cols-2 md:px-8">
-        <div className="relative min-h-[420px]">
+      <div className="mx-auto mt-16 grid max-w-6xl items-start gap-12 px-5 pb-24 md:grid-cols-2 md:px-8">
+        <div className="relative aspect-square overflow-hidden bg-paper-2">
           <Image
-            src="/media/repair-estate.jpg"
-            alt="Service gauges on a condenser at a Southwest Florida home"
+            src="/media/mike-palon.jpg"
+            alt="Mike Palon, owner of AAA HVAC"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="(min-width: 768px) 50vw, 100vw"
+            priority
           />
         </div>
         <div className="space-y-5 text-[1.05rem] leading-relaxed text-ink-soft">
