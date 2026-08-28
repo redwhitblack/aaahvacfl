@@ -11,15 +11,15 @@ export const metadata: Metadata = {
 export default function AreasPage() {
   return (
     <div className="pt-28">
-      <div className="relative h-[46vh] min-h-[320px]">
+      <div className="relative h-[56vh] min-h-[380px]">
         <Image
-          src="/media/neighborhood.jpg"
-          alt="Southwest Florida homes along a canal"
+          src="/media/luxury-canal.jpg"
+          alt="Palm-lined waterfront street in Southwest Florida"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-gulf-deep/45" />
+        <div className="absolute inset-0 bg-gradient-to-t from-gulf-deep/70 via-gulf-deep/25 to-transparent" />
         <div className="relative mx-auto flex h-full max-w-6xl items-end px-5 pb-10 text-paper md:px-8">
           <h1 className="serif text-5xl md:text-6xl">
             Naples, Fort Myers, and nearby

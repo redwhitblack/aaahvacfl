@@ -109,22 +109,22 @@ export default function Home() {
       </section>
 
       <section className="relative overflow-hidden">
-        <div className="relative min-h-[480px]">
+        <div className="relative min-h-[70svh]">
           <Image
-            src="/media/neighborhood.jpg"
-            alt="Homes along a canal in Southwest Florida"
+            src="/media/gulf-waterfront.jpg"
+            alt="Waterfront estate along the Gulf in Southwest Florida"
             fill
-            className="object-cover"
+            className="object-cover object-[70%_center]"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gulf-deep/55" />
-          <div className="relative mx-auto flex min-h-[480px] max-w-6xl items-end px-5 py-16 text-paper md:px-8">
-            <div className="max-w-2xl">
-              <p className="serif text-3xl leading-snug md:text-4xl">
+          <div className="absolute inset-0 bg-gradient-to-r from-gulf-deep/85 via-gulf-deep/45 to-gulf-deep/10" />
+          <div className="relative mx-auto flex min-h-[70svh] max-w-6xl items-end px-5 py-16 text-paper md:items-center md:px-8 md:py-24">
+            <div className="max-w-xl">
+              <p className="serif text-3xl leading-[1.15] md:text-5xl">
                 Air conditioners here run most of the year. A checkup before
                 the heat hits is cheaper than a Sunday breakdown.
               </p>
-              <p className="mt-6 text-xs tracking-[0.2em] uppercase text-brass">
+              <p className="mt-8 text-xs tracking-[0.22em] uppercase text-brass">
                 Naples · Fort Myers · Southwest Florida
               </p>
             </div>
