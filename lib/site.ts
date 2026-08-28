@@ -54,8 +54,8 @@ export const services = [
     title: "Replacement & install",
     lead: "When a repair is no longer worth it, we put in a system that fits the building and this heat.",
     body: "Air conditioners down here run most of the year. Heat, humidity, and salt air wear them out. We replace what needs replacing and will not sell you a bigger unit than the job needs.",
-    image: "/media/hero-home.jpg",
-    alt: "Southwest Florida home with an outdoor air conditioner",
+    image: "/media/hero-estate.jpg",
+    alt: "Luxury Southwest Florida estate with an outdoor air conditioner",
   },
   {
     slug: "refrigeration",

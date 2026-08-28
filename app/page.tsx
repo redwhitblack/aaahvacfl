@@ -7,13 +7,13 @@ export default function Home() {
     <>
       <section className="relative min-h-[100svh] overflow-hidden bg-gulf-deep grain">
         <Image
-          src="/media/hero-home.jpg"
-          alt="Home in Southwest Florida with an outdoor air conditioner"
+          src="/media/hero-estate.jpg"
+          alt="Luxury Southwest Florida estate with an outdoor air conditioner"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-[45%_center]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gulf-deep via-gulf-deep/55 to-gulf-deep/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-gulf-deep via-gulf-deep/40 to-gulf-deep/15" />
         <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-16 pt-32 text-paper md:px-8 md:pb-24">
           <p className="text-[11px] tracking-[0.32em] uppercase text-brass">
             Naples · Fort Myers · Since {site.founded}
