@@ -2,7 +2,16 @@
 
 import { useState } from "react";
 
-const leadUrl = process.env.NEXT_PUBLIC_LEAD_URL || "/api/lead";
+function leadUrl() {
+  if (typeof window !== "undefined") {
+    const host = window.location.hostname;
+    if (host === "localhost" || host === "127.0.0.1") return "/api/lead";
+  }
+  return (
+    process.env.NEXT_PUBLIC_LEAD_URL ||
+    "https://aaahvacfl-lead.cgayapr.workers.dev/api/lead"
+  );
+}
 
 export function LeadForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
@@ -20,7 +29,7 @@ export function LeadForm() {
     }
     setStatus("sending");
     try {
-      const res = await fetch(leadUrl, {
+      const res = await fetch(leadUrl(), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
