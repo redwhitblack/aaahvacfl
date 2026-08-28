@@ -1,0 +1,172 @@
+import Image from "next/image";
+import Link from "next/link";
+import { services, site } from "@/lib/site";
+
+export default function Home() {
+  return (
+    <>
+      <section className="relative min-h-[100svh] overflow-hidden bg-gulf-deep grain">
+        <Image
+          src="/media/hero-home.jpg"
+          alt="Home in Southwest Florida with an outdoor air conditioner"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gulf-deep via-gulf-deep/55 to-gulf-deep/25" />
+        <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-16 pt-32 text-paper md:px-8 md:pb-24">
+          <p className="text-[11px] tracking-[0.32em] uppercase text-brass">
+            Naples · Fort Myers · Since {site.founded}
+          </p>
+          <h1 className="serif mt-5 max-w-3xl text-5xl leading-[0.95] md:text-7xl">
+            Heating, air, and refrigeration since {site.founded}.
+          </h1>
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-paper/80 md:text-lg">
+            {site.legalName}. Owner {site.owner}. Homes and businesses from
+            Naples to Fort Myers.
+          </p>
+          <div className="mt-10">
+            <Link
+              href="/contact"
+              className="inline-flex rounded-full bg-brass px-6 py-3 text-xs tracking-[0.18em] uppercase text-gulf-deep transition-opacity hover:opacity-90"
+            >
+              Request service
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-2 md:px-8 md:py-28">
+        <div>
+          <p className="text-[11px] tracking-[0.28em] uppercase text-water">
+            Since {site.founded}
+          </p>
+          <h2 className="serif mt-4 text-4xl leading-tight md:text-5xl">
+            Mike Palon owns the company. He does the work.
+          </h2>
+        </div>
+        <div className="space-y-5 text-[1.05rem] leading-relaxed text-ink-soft">
+          <p>
+            This shop has been his since {site.founded}. You talk to Mike — the
+            person who will be at the house.
+          </p>
+          <p>
+            We repair, replace, and maintain air conditioning, heating, and
+            refrigeration. If a part will fix it, that is what we do. If the
+            unit is worn out, we will say so and give you a price.
+          </p>
+          <p>
+            We also work on restaurant equipment: walk-ins, reach-ins, and ice
+            machines.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-paper-2">
+        <div className="mx-auto max-w-6xl px-5 py-20 md:px-8">
+          <div className="flex items-end justify-between gap-6">
+            <h2 className="serif text-4xl md:text-5xl">Services</h2>
+            <Link
+              href="/services"
+              className="text-xs tracking-[0.18em] uppercase text-water transition-opacity hover:opacity-70"
+            >
+              All services
+            </Link>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            {services.map((s) => (
+              <article key={s.slug} className="bg-paper">
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={s.image}
+                    alt={s.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                  />
+                </div>
+                <div className="p-6 md:p-8">
+                  <h3 className="serif text-2xl">{s.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+                    {s.lead}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden">
+        <div className="relative min-h-[480px]">
+          <Image
+            src="/media/neighborhood.jpg"
+            alt="Homes along a canal in Southwest Florida"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gulf-deep/55" />
+          <div className="relative mx-auto flex min-h-[480px] max-w-6xl items-end px-5 py-16 text-paper md:px-8">
+            <div className="max-w-2xl">
+              <p className="serif text-3xl leading-snug md:text-4xl">
+                Air conditioners here run most of the year. A checkup before
+                the heat hits is cheaper than a Sunday breakdown.
+              </p>
+              <p className="mt-6 text-xs tracking-[0.2em] uppercase text-brass">
+                Naples · Fort Myers · Southwest Florida
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
+        <p className="text-[11px] tracking-[0.28em] uppercase text-water">
+          About Mike
+        </p>
+        <h2 className="serif mt-4 max-w-3xl text-4xl leading-tight md:text-5xl">
+          {site.years} years in this trade.
+        </h2>
+        <div className="mt-10 grid gap-8 text-sm leading-relaxed text-ink-soft md:grid-cols-2">
+          <p>
+            Heating, air conditioning, and refrigeration — repair, replacement,
+            and maintenance on all major brands. Heat pumps, split systems,
+            package units, mini-splits, walk-in coolers, and ice machines.
+          </p>
+          <p>
+            He keeps the job site clean, explains what he found, and stands
+            behind the work. New equipment is sized for the house, not sold
+            oversized.
+          </p>
+        </div>
+        <Link
+          href="/mike"
+          className="mt-10 inline-block text-xs tracking-[0.18em] uppercase text-water transition-opacity hover:opacity-70"
+        >
+          More about Mike
+        </Link>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
+        <div className="grid gap-8 border border-line p-8 md:grid-cols-[1.4fr_1fr] md:p-12">
+          <div>
+            <h2 className="serif text-4xl">Need the air fixed?</h2>
+            <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
+              Naples, Fort Myers, and nearby. Tell us what is going on and we
+              will get back to you.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center">
+            <Link
+              href="/contact"
+              className="rounded-full bg-gulf px-6 py-3 text-center text-xs tracking-[0.18em] uppercase text-paper transition-opacity hover:opacity-90"
+            >
+              Contact us
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
