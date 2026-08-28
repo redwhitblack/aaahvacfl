@@ -56,7 +56,7 @@ export default function Home() {
           <div className="mt-8 space-y-5 text-[1.05rem] leading-relaxed text-ink-soft">
             <p>
               Mike has run this company since {site.founded}. Homes, companies,
-              and industrial sites — he does the work himself.
+              and industrial sites.
             </p>
             <p>
               He has designed the heating and air for many buildings and
