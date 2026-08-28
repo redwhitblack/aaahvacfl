@@ -7,13 +7,6 @@ export function JsonLd() {
     name: site.shortName,
     legalName: site.legalName,
     url: site.url,
-    founder: {
-      "@type": "Person",
-      name: site.owner,
-      jobTitle: "Owner and operator",
-      image: `${site.url}/media/mike-palon.jpg`,
-    },
-    image: `${site.url}/media/mike-palon.jpg`,
     foundingDate: "1999-08-19",
     address: {
       "@type": "PostalAddress",

@@ -20,25 +20,16 @@ const newsreader = Newsreader({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: {
-    default: `${site.shortName} — ${site.owner}, Naples and Fort Myers`,
-    template: `%s · ${site.shortName}`,
-  },
+  title: `${site.shortName} — Naples and Fort Myers`,
   description: site.description,
+  robots: { index: false, follow: false },
   openGraph: {
-    title: `${site.shortName} — ${site.owner}`,
+    title: site.shortName,
     description: site.description,
     url: site.url,
     siteName: site.shortName,
-    images: [{ url: "/media/hero-estate.jpg", width: 1200, height: 675 }],
     locale: "en_US",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${site.shortName} — ${site.owner}`,
-    description: site.description,
-    images: ["/media/hero-estate.jpg"],
   },
   icons: { icon: "/icon.svg" },
 };

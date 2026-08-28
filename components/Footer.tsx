@@ -5,34 +5,20 @@ import { Logo } from "./Logo";
 export function Footer() {
   return (
     <footer className="bg-gulf-deep text-paper">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-3 md:px-8">
+      <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-2 md:px-8">
         <div>
           <Logo light />
-          <p className="mt-5 max-w-xs text-sm leading-relaxed text-paper/90">
-            {site.legalName}. {site.owner}, owner and operator. Homes,
-            companies, and industrial work in Southwest Florida since{" "}
-            {site.founded}.
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-paper/90">
+            {site.legalName}. Heating, air, and refrigeration in Southwest
+            Florida since {site.founded}.
           </p>
         </div>
-        <div className="text-sm leading-7 text-paper/90">
-          <p className="text-[11px] tracking-[0.22em] uppercase text-brass-light">
-            Service area
-          </p>
-          <p className="mt-3">
-            Naples · Fort Myers
-            <br />
-            Southwest Florida
-          </p>
-        </div>
-        <div className="text-sm leading-7">
+        <div className="text-sm leading-7 text-paper">
           <p className="text-[11px] tracking-[0.22em] uppercase text-brass-light">
             Site
           </p>
-          <div className="mt-3 flex flex-col gap-1 text-paper">
-            <Link href="/services">Services</Link>
-            <Link href="/mike">Mike Palon</Link>
-            <Link href="/areas">Service area</Link>
-            <Link href="/contact">Contact</Link>
+          <div className="mt-3 flex flex-col gap-1">
+            <Link href="/">Home</Link>
             <Link href="/privacy">Privacy</Link>
           </div>
         </div>

@@ -1,10 +1,15 @@
 # AAA HVAC Florida
 
-Site for AAA Heating A/C & Refrigeration of Naples, Inc. — Mike Palon, Southwest Florida, since 1999.
+Live site: [aaahvacfl.com](https://aaahvacfl.com)
 
-[aaahvacfl.com](https://aaahvacfl.com)
+The full showcase (Mike’s site) is parked on the `showcase` branch until he approves it.
 
-Phone numbers are off the site until Mike publishes a line.
+```bash
+# restore the showcase to production
+git checkout main
+git merge showcase
+git push origin main
+```
 
 ```bash
 npm install

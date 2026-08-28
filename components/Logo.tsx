@@ -34,7 +34,7 @@ export function Logo({
           className="block text-[11px] tracking-[0.28em] uppercase"
           style={{ color: light ? "#F4EFE6" : "#2C3A34" }}
         >
-          Mike Palon
+          Southwest Florida
         </span>
         <span
           className="serif block text-[1.15rem] tracking-tight"

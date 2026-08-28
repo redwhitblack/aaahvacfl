@@ -11,7 +11,7 @@ export const site = {
   city: "Naples",
   state: "FL",
   description:
-    "Heating, air, and refrigeration for homes, companies, and industrial sites in Naples and Fort Myers. Mike Palon, owner and operator. Since 1999.",
+    "Heating, air, and refrigeration for homes, companies, and industrial sites in Naples and Fort Myers. Since 1999.",
 } as const;
 
 export const telHref = site.phoneReady ? `tel:+1${site.phone}` : "/contact";

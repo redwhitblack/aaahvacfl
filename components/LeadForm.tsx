@@ -51,7 +51,7 @@ export function LeadForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-4">
+    <form id="contact" onSubmit={onSubmit} className="grid gap-4">
       <div aria-hidden="true" className="hidden">
         <label>
           Company
