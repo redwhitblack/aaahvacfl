@@ -20,14 +20,14 @@ const newsreader = Newsreader({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: `${site.shortName} — Naples and Fort Myers`,
-  description: site.description,
+  title: "Coming soon",
+  description: "A new website is on the way.",
   robots: { index: false, follow: false },
   openGraph: {
-    title: site.shortName,
-    description: site.description,
+    title: "Coming soon",
+    description: "A new website is on the way.",
     url: site.url,
-    siteName: site.shortName,
+    siteName: "Coming soon",
     locale: "en_US",
     type: "website",
   },

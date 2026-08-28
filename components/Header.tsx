@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header className="border-b border-line bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 md:px-8">
-        <Link href="/" aria-label="AAA HVAC home">
+        <Link href="/" aria-label="Home">
           <Logo />
         </Link>
         <Link

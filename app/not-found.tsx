@@ -6,8 +6,7 @@ export default function NotFound() {
       <p className="text-[11px] tracking-[0.28em] uppercase text-water">404</p>
       <h1 className="serif mt-4 text-5xl">That page is not here.</h1>
       <p className="mt-4 max-w-md text-ink-soft">
-        The link may be old. Head back home or send a message if you need
-        service.
+        The link may be old. Head back home or send a message.
       </p>
       <div className="mt-10 flex flex-wrap gap-4">
         <Link

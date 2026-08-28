@@ -1,6 +1,5 @@
 export function Logo({
   light = false,
-  compact = false,
 }: {
   light?: boolean;
   compact?: boolean;
@@ -10,38 +9,23 @@ export function Logo({
 
   return (
     <span className="inline-flex items-center gap-3">
-      <svg
-        width={compact ? 34 : 40}
-        height={compact ? 34 : 40}
-        viewBox="0 0 40 40"
-        aria-hidden="true"
-      >
-        <rect x="1" y="1" width="38" height="38" rx="3" fill="none" stroke={brass} strokeWidth="1.4" />
-        <text
-          x="20"
-          y="26"
-          textAnchor="middle"
-          fill={ink}
-          fontFamily="Georgia, serif"
-          fontSize="13"
-          letterSpacing="1.4"
-        >
-          AAA
-        </text>
+      <svg width={40} height={40} viewBox="0 0 40 40" aria-hidden="true">
+        <rect
+          x="1"
+          y="1"
+          width="38"
+          height="38"
+          rx="3"
+          fill="none"
+          stroke={brass}
+          strokeWidth="1.4"
+        />
       </svg>
-      <span className="leading-none">
-        <span
-          className="block text-[11px] tracking-[0.28em] uppercase"
-          style={{ color: light ? "#F4EFE6" : "#2C3A34" }}
-        >
-          Southwest Florida
-        </span>
-        <span
-          className="serif block text-[1.15rem] tracking-tight"
-          style={{ color: ink }}
-        >
-          AAA HVAC
-        </span>
+      <span
+        className="serif block text-[1.15rem] tracking-tight"
+        style={{ color: ink }}
+      >
+        Coming soon
       </span>
     </span>
   );
