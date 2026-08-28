@@ -10,6 +10,7 @@ export function JsonLd() {
     founder: {
       "@type": "Person",
       name: site.owner,
+      jobTitle: "Owner and operator",
       image: `${site.url}/media/mike-palon.jpg`,
     },
     image: `${site.url}/media/mike-palon.jpg`,

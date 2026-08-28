@@ -19,8 +19,8 @@ export default function ServicesPage() {
           Heating, air, and refrigeration
         </h1>
         <p className="mt-6 max-w-xl text-ink-soft">
-          We work on the equipment already in the house or the kitchen, all
-          major brands.
+          Houses, companies, restaurants, and industrial sites. We work on the
+          equipment already in place, all major brands.
         </p>
       </header>
 

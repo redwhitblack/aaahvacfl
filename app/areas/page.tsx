@@ -28,9 +28,9 @@ export default function AreasPage() {
       </div>
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-[1fr_1.2fr] md:px-8">
         <p className="text-ink-soft leading-relaxed">
-          Collier and Lee County — homes, condos, and businesses. If you are
-          close and not on this list, still write. If we cannot take the job,
-          we will say so.
+          Collier and Lee County — homes, companies, and industrial sites. If
+          you are close and not on this list, still write. If we cannot take
+          the job, we will say so.
         </p>
         <ul className="columns-2 gap-8 text-sm leading-8 md:columns-3">
           {areas.map((a) => (

@@ -16,6 +16,8 @@ export default function ContactPage() {
           <p className="mt-10 text-sm leading-7 text-ink-soft">
             {site.legalName}
             <br />
+            Homes, companies, and industrial sites
+            <br />
             Naples, Fort Myers, and nearby
           </p>
           <p className="mt-8 max-w-sm text-sm text-ink-soft">

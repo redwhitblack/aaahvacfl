@@ -9,7 +9,8 @@ export function Footer() {
         <div>
           <Logo light />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-paper/70">
-            {site.legalName}. Owner {site.owner}. Southwest Florida since{" "}
+            {site.legalName}. {site.owner}, owner and operator. Homes,
+            companies, and industrial work in Southwest Florida since{" "}
             {site.founded}.
           </p>
         </div>

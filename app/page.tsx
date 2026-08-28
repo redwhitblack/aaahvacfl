@@ -22,8 +22,8 @@ export default function Home() {
             Heating, air, and refrigeration since {site.founded}.
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-paper/80 md:text-lg">
-            {site.legalName}. Owner {site.owner}. Homes and businesses from
-            Naples to Fort Myers.
+            {site.legalName}. {site.owner}, owner and operator. Homes,
+            companies, and industrial sites from Naples to Fort Myers.
           </p>
           <div className="mt-10">
             <Link
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="relative aspect-square overflow-hidden bg-paper-2">
           <Image
             src="/media/mike-palon.jpg"
-            alt="Mike Palon, owner of AAA HVAC"
+            alt="Mike Palon, owner and operator of AAA HVAC"
             fill
             className="object-cover object-top"
             sizes="(min-width: 768px) 50vw, 100vw"
@@ -48,24 +48,26 @@ export default function Home() {
         </div>
         <div>
           <p className="text-[11px] tracking-[0.28em] uppercase text-water">
-            Since {site.founded}
+            Owner and operator
           </p>
           <h2 className="serif mt-4 text-4xl leading-tight md:text-5xl">
-            Mike Palon owns the company. He does the work.
+            Mike Palon
           </h2>
           <div className="mt-8 space-y-5 text-[1.05rem] leading-relaxed text-ink-soft">
             <p>
-              This shop has been his since {site.founded}. You talk to Mike —
-              the person who will be at the house.
+              Mike has run this company since {site.founded}. Homes, companies,
+              and industrial sites — he does the work himself.
             </p>
             <p>
-              We repair, replace, and maintain air conditioning, heating, and
-              refrigeration. If a part will fix it, that is what we do. If the
-              unit is worn out, we will say so and give you a price.
+              He has designed the heating and air for many buildings and
+              worked a lot of industrial jobs. Repair, replacement, and
+              maintenance on all major brands. If a part will fix it, that is
+              what we do. If the system is worn out, we will say so and give
+              you a price.
             </p>
             <p>
-              We also work on restaurant equipment: walk-ins, reach-ins, and
-              ice machines.
+              Restaurant and commercial refrigeration too: walk-ins,
+              reach-ins, and ice machines.
             </p>
           </div>
         </div>
@@ -139,13 +141,14 @@ export default function Home() {
         </h2>
         <div className="mt-10 grid gap-8 text-sm leading-relaxed text-ink-soft md:grid-cols-2">
           <p>
-            Heating, air conditioning, and refrigeration — repair, replacement,
-            and maintenance on all major brands. Heat pumps, split systems,
+            Residential, commercial, and industrial. Heating, air
+            conditioning, and refrigeration — repair, replacement, and
+            maintenance on all major brands. Heat pumps, split systems,
             package units, mini-splits, walk-in coolers, and ice machines.
           </p>
           <p>
             He keeps the job site clean, explains what he found, and stands
-            behind the work. New equipment is sized for the house, not sold
+            behind the work. New equipment is sized for the building, not sold
             oversized.
           </p>
         </div>
@@ -162,8 +165,8 @@ export default function Home() {
           <div>
             <h2 className="serif text-4xl">Need the air fixed?</h2>
             <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
-              Naples, Fort Myers, and nearby. Tell us what is going on and we
-              will get back to you.
+              Homes, companies, and industrial sites in Naples, Fort Myers,
+              and nearby. Tell us what is going on and we will get back to you.
             </p>
           </div>
           <div className="flex flex-col justify-center">

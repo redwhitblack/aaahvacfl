@@ -11,7 +11,7 @@ export const site = {
   city: "Naples",
   state: "FL",
   description:
-    "Heating, air conditioning, and refrigeration in Naples and Fort Myers. Owner Mike Palon. In business since 1999.",
+    "Heating, air, and refrigeration for homes, companies, and industrial sites in Naples and Fort Myers. Mike Palon, owner and operator. Since 1999.",
 } as const;
 
 export const telHref = site.phoneReady ? `tel:+1${site.phone}` : "/contact";
@@ -52,8 +52,8 @@ export const services = [
   {
     slug: "install",
     title: "Replacement & install",
-    lead: "When a repair is no longer worth it, we put in a system that fits the house and this heat.",
-    body: "Air conditioners down here run most of the year. Heat, humidity, and salt air wear them out. We replace what needs replacing and will not sell you a bigger unit than the house needs.",
+    lead: "When a repair is no longer worth it, we put in a system that fits the building and this heat.",
+    body: "Air conditioners down here run most of the year. Heat, humidity, and salt air wear them out. We replace what needs replacing and will not sell you a bigger unit than the job needs.",
     image: "/media/hero-home.jpg",
     alt: "Southwest Florida home with an outdoor air conditioner",
   },
