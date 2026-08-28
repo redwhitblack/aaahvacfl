@@ -54,9 +54,7 @@ export function Header() {
           ))}
           <Link
             href="/contact"
-            className={`rounded-full px-4 py-2 tracking-[0.14em] transition-opacity hover:opacity-90 ${
-              light ? "bg-paper text-gulf" : "bg-gulf text-paper"
-            }`}
+            className="rounded-full bg-brass px-4 py-2 tracking-[0.14em] text-gulf-deep transition-opacity hover:opacity-90"
           >
             Contact
           </Link>
@@ -84,7 +82,7 @@ export function Header() {
             ))}
             <Link
               href="/contact"
-              className="text-water"
+              className="rounded-full bg-brass px-4 py-2 text-center text-gulf-deep"
               onClick={() => setOpen(false)}
             >
               Contact
